@@ -1,0 +1,240 @@
+.Card_Pacote_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%; /* Ocupar 100% da altura da Card_Pacote */
+  }
+  
+
+
+.Card_Pacote{
+    border-radius: 10px;
+    background-color: #EBEBEB;
+    height: 500px;
+    width: 300px;
+    gap: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    font-family:"Clear Sans",sans-serif;
+}
+.titulo_pacote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3.9rem;
+}
+
+.content_pacotes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content_pacotes span{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem;
+    border-top: 1px solid white ;
+    font-size: 15px;
+
+    color: grey;
+}
+
+.titulo_pacote h1{
+    font-size: 30px;
+}
+
+.titulo_pacote h3{
+    font-size: 25px;
+}
+
+.button_pacote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.button_pacote button{
+    border: none;
+    padding: 0.6rem;
+    color: white;
+    width: 160px;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (min-width: 280px) and (max-width: 653px){
+    .Card_Pacote {
+        width: 80%;
+        height: 400px; /* Ajusta a altura automaticamente para o conteúdo */
+        padding: 1rem;
+
+    }
+    .titulo_pacote {
+        padding: 2rem;
+      }
+      .titulo_pacote h1 {
+        font-size: 19px;
+  }
+
+  .titulo_pacote h3 {
+        font-size: 17px;
+  }
+
+  .content_pacotes span{
+    text-align: center;
+    font-size: 15px;
+}
+.button_pacote{
+    padding: 0.6rem;
+}
+
+.button_pacote button{
+    
+    font-size: 15px;
+}
+
+.Card_Pacote_content{
+    height: 50%;
+}
+
+}@media only screen and (min-width: 280px) and (max-width: 653px){
+    .Card_Pacote {
+        width: 95%;
+        height: 450px; /* Ajusta a altura automaticamente para o conteúdo */
+        padding: 1rem;
+
+    }
+    .titulo_pacote {
+        padding: 1.5rem;
+      }
+      .titulo_pacote h1 {
+        font-size: 19px;
+  }
+
+  .titulo_pacote h3 {
+        font-size: 17px;
+  }
+
+  .content_pacotes span{
+    text-align: center;
+    font-size: 13px;
+}
+.button_pacote{
+    padding: 0.4rem;
+}
+
+.button_pacote button{
+    font-size: 13px;
+}
+}
+
+
+
+@media only screen and (min-width: 540px) and (max-width: 720px){
+
+    .Card_Pacote{
+        width: 70%;
+        padding: 1.5rem;
+        height: 20%;
+        
+
+        
+    }
+    .Card_Pacote_content{
+        display: flex;
+        height: 50%;     
+    }
+
+    .titulo_pacote h1 {
+        font-size: 25px;
+  }
+
+  .titulo_pacote h3 {
+        font-size: 20px;
+  }
+
+  .content_pacotes span{
+    text-align: center;
+    font-size: 14px;
+}
+
+.button_pacote button{
+    font-size: 14px;
+}
+
+
+  
+}
+
+@media only screen and (min-width: 360px) and (max-width: 640px){
+    .Card_Pacote{
+        width: 100%;
+        padding: 1.5rem;
+        height: 10%;
+        
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 896px){
+    .Card_Pacote{
+        width: 100%;
+        padding: 2rem;
+        
+        
+    }
+    .button_pacote{
+        padding: 2rem;
+    }
+
+    .button_pacote button{
+        font-size: 20px;
+        width: 80%;
+    }
+
+    .content_pacotes span{
+        font-size: 20px;
+    }
+    .titulo_pacote h1 {
+        font-size: 30px;
+  }
+
+  .titulo_pacote h3 {
+        font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px){
+    .Card_Pacote{
+        width: 70%;
+        height: 80%;
+    }
+
+    .Card_Pacote_content span{
+        font-size: 25px;
+    }
+    
+    .title_cards_pacotes{
+        padding: 0.4rem;
+        text-align: center;
+        gap: 0.4rem;
+    }
+}
+
+@media only screen and (max-width: 720px){
+.Card_Pacote{
+    width: 70%;
+}
+}
+
+@media only screen and (min-width: 280px) and (max-width:653px){
+    .Card_Pacote{
+        width: 70%;
+    }
+}

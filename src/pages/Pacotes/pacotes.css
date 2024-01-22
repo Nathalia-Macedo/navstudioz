@@ -1,0 +1,129 @@
+.nossosPacotes{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem;
+}
+
+
+.container_combos{
+  background-image: url("../../assets/combosbg.gif");
+  background-size: cover;
+}
+
+.title_cards_pacotes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.combos{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    flex-direction: column;
+  
+}
+
+.cartoes_pacotes{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.nossosPacotes img{
+    width: 500px;
+    border-radius: 15px;
+}
+
+
+.conteudoPacotes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+
+/* Estilos responsivos para dispositivos com largura de até 768 pixels */
+@media only screen and (max-width: 768px) {
+    .nossosPacotes {
+      flex-direction: column; /* Empilha os elementos verticalmente */
+      gap: 2rem;
+      padding: 1rem;
+
+    }
+  
+    .cartoes_pacotes {
+      gap: 1rem;
+      padding: 2rem;
+    }
+  
+    .nossosPacotes img {
+      width: 90%; /* Ajusta a largura da imagem para ocupar 100% do contêiner pai */
+      
+    }
+
+    .combos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2rem;
+    }  
+  }
+
+
+@media only screen and (min-width: 412px) and (max-width: 914px) {
+    .conteudoPacotes {
+        /* Exemplo de estilos para a seção .conteudoPacotes em tablets */
+        padding: 1rem;
+        gap: 2rem;
+        width: 100%;
+        text-align: justify;
+        font-size: 25px;
+        
+      }
+
+      .btn{
+        width: 90%;
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 844px){
+        .conteudoPacotes {
+            /* Exemplo de estilos para a seção .conteudoPacotes em tablets */
+            padding: 1rem;
+            gap: 2rem;
+            width: 100%;
+            text-align: justify;
+            font-size: 25px;
+            
+          }
+    
+          .btn{
+            width: 90%;
+            font-size: 25px;
+        }   
+}
+@media only screen and (min-width: 414px) and (max-width: 896px){
+.combos{
+  padding: 0;
+}
+
+.title_cards_pacotes h1{
+  font-size: 40px;
+}
+
+.title_cards_pacotes span{
+  font-size: 20px;
+}
+}

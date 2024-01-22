@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../assets/one.png");
+    background-size: cover;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.home p {
+   font-weight: 400;
+   font-size: 0.8rem;
+}
+
+.circle{
+    background-color: blue;
+    width: 15%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.color {
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(to right,#8548ff, #c0f);
+}
+
+
+.text {
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.text h1 {
+    font-size: 2rem;
+}
+
+
+
+.sobreNos{
+    height: 700px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+
+
+
+.colorido{
+    background: linear-gradient(#8548ff,#cc00ff);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    border: 15px solid white;
+}
+.colorido img {
+    width: 100%;
+}
+
+.content{
+    width: 90%;
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.content img{
+    width: 40%;
+    border-radius: 25px;
+}
+
+.description{
+    width: 50%;
+    gap: 1rem;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    font-family:"Clear Sans",sans-serif;
+    font-weight: bold;
+
+
+}
+
+@media screen and (max-width: 430px) {
+    .content img {
+        display: none;
+    }
+
+    .description{
+        width: 100%; /* Ocupa a largura completa */
+        max-width: none; /* Remove a largura máxima definida anteriormente */
+        text-align: center;
+        margin-top: 1rem; /* Adiciona espaçamento superior */
+    }
+}
+
+.nossosServicos{
+    background-image: url("../../assets/fundo_roxo.png");
+    height: 100vh;
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+}
+
+.row{
+    background-color: #c0f;
+    width: 200px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.nossosServicos h1{
+    color: white;
+    padding: 2rem;
+    
+}
+
+
+
+.servicos{
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    gap: 10rem;
+}
+
+@media only screen and (max-width: 653px) and (max-height: 280px), only screen and (max-width: 280px) and (max-height: 653px) {
+    /* Estilos para dispositivos com largura até 653px e altura até 280px, ou largura até 280px e altura até 653px */
+   
+    
+
+    .nossosServicos {
+        margin-top: 5rem;
+    }
+
+    .row {
+      margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 540px) and (max-height: 720px) {
+    .content {
+        flex-direction: column; /* Altera a direção do flex container para coluna */
+        align-items: center; /* Centraliza os itens na direção transversal (no eixo Y) */
+        text-align: center; /* Centraliza o texto */
+        margin-bottom: 2rem;
+    }
+
+    .content img {
+      display: none;
+    }
+}
+
+

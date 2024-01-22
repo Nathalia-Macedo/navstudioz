@@ -1,0 +1,160 @@
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    background-color: black;
+    color: white;
+}
+
+.line_footer{
+    width: 15%;
+    background-color: #9746FF ;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.title_footer{
+    text-align: center;
+}
+
+.info_user_footer{
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_user_footer input{
+    border: none;
+    background-color: #9746FF;
+    padding: 0.5rem;
+    font-family: "Clear Sans", sans serif;
+    color: white;
+    border-radius: 
+    5px;
+    width: 30%;
+    outline: none;
+
+}
+.button_footer button{
+    width: 150px;
+    padding: 1rem;
+    background-color: #ED38B0;
+    color: white;
+    border: none;
+    font-size: 15px;
+
+}
+
+.icons_footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.navegation{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+.finale{
+    padding: 1rem;
+    font-size: 13px;
+}
+
+.line_high{
+    height: 10px;
+    width: 70%;
+    background-color: #E810FF;
+    border-radius: 15px;
+}
+
+img{
+    width: 200px;
+
+}
+
+
+.message_footer textarea{
+    background-color: #9746FF;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+.message_footer textarea::placeholder{
+    color: white;
+    padding: 0.2rem;
+}
+.info_user_footer input::placeholder{
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    footer {
+        padding: 1rem;
+    }
+
+    .info_user_footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info_user_footer input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .button_footer button {
+        width: 100%;
+    }
+
+    .icons_footer {
+        padding: 1rem;
+    }
+
+    .navegation {
+        padding: 1rem;
+    }
+
+    img {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 1rem;
+    }
+    .message_footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .message_footer textarea{
+        width: 90%;
+    }
+
+   
+}  
+
+@media only screen and (min-width: 280px) and (max-width: 653px){
+    .line_footer{
+        width: 30%;
+    }
+    .title_footer h1{
+      font-size: 25px;
+    }
+
+    .title_footer{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
