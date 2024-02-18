@@ -11,7 +11,9 @@ function Pacotes(){
         <>
         <Nav></Nav>
         <section className="nossosPacotes">
+            <div className="image_pacote">
             <img src={mockup} alt="foto"/>
+            </div>
             <div className="conteudoPacotes">
                 <h2>Nossos Pacotes</h2>
                 <p>Descubra um <span><b>universo de possibilidades</b></span> criativas com os <br/>exclusivos combos da Nav Studioz. Deixe-se envolver pela <br/> magia da fotografia, explorando nuances artísticas em <br/> nossos ensaios únicos; transmita sua mensagem de forma <br/> envolvente com nossa filmagem especializada para mídias <br/> sociais; transforme momentos em memórias eternas através<br/> de nossa edição de vídeo meticulosa; eleve a imagem de sua <br/> empresa com nosso combo corporativo sob medida. <br/><br/> E para uma experiênica verdadeiramente ilimitada, mergulhe<br/> no incomparável Combo Universe, onde todas essas opções <br/> se fundem, criando um mundo de expressão visual sem <br/> fronteiras. Seja qual for a sua visão, na Nav Studioz, nossos <br/>combos transformam <span><b>ideias em realidade</b></span></p>
@@ -70,7 +72,7 @@ function Pacotes(){
             <Card_Pacote colorFont="#844AFF" titleCard="CLÁSSICO" value="R$610,00" qtd="10 fotos (Retrato ou Still)"  type="Edição" estudio="1 Reel"
             product=" Produção Selecionada " make="Maquiagem" buttonColor="#844AFF" ></Card_Pacote>
             <Card_Pacote colorFont="#CE00FF" titleCard="MASTER" value="R$800,00" qtd="15 fotos (Retrato ou Still)" type="1 Reel + Edição" estudio="3 horas de Locação" product="Produção Selecionada "  make="Maquiagem" buttonColor="#CE00FF" ></Card_Pacote>
-            <Card_Pacote colorFont="#008CFF" titleCard="PREMIUM" value="R$960,00" qtd="20 fotos (Retrato ou Still)" estudio=" 4 horas de Locação" product="Produção selecionada + Ediçao" type="1 Reel" make="Maquiagem" buttonColor="#008CFF"  ></Card_Pacote> </div>
+            <Card_Pacote colorFont="#008CFF" titleCard="PREMIUM" value="R$960,00" qtd="20 fotos (Retrato ou Still)" product="Produção selecionada + Ediçao" type="1 Reel + 4 horas de Locação" make="Maquiagem" buttonColor="#008CFF"  ></Card_Pacote> </div>
         </section>
         <section className="combos">
         <div className="title_cards_pacotes">
@@ -79,7 +81,7 @@ function Pacotes(){
             </div>
             <div className="cartoes_pacotes">
             <Card_Pacote colorFont="#844AFF" titleCard="CLÁSSICO" value="R$860,00" qtd="10 fotos (Retrato ou Still)"  type="2 horas de Locação + Edição" estudio="1 Edição de Teaser"
-            product="Produção Criativa" make="Maquiagem" buttonColor="#844AFF" ></Card_Pacote>
+            product="Produção Criativa + Maquiagem" buttonColor="#844AFF" ></Card_Pacote>
             <Card_Pacote colorFont="#CE00FF" titleCard="Astro" value="R$1.500,00" qtd="20 fotos (Retratos ou Still)" type="3 horas de Locação + Maquiagem" product=" 1 Edição de Teaser + 1 Reel"
             estudio="Produção Criativa + Edição"  buttonColor="#CE00FF" ></Card_Pacote>
             <Card_Pacote colorFont="#008CFF" titleCard="Galaxy" value="R$1.500,00" qtd="30 fotos (Retrato ou Still)" estudio=" 4 horas de Locação" product=" 1 Edição Teaser + 1 Reel" type="Produção criativa + Edição"  make="Maquiagem" buttonColor="#008CFF"  ></Card_Pacote> </div>

@@ -1,16 +1,18 @@
 import "./Home.css"
-import foto from "../../assets/foto.png"
+
 import iconphoto from "../../assets/iconphoto.png"
 import edition from "../../assets/edicao.png"
 import iconedition from "../../assets/iconedition.png"
 import video from "../../assets/video.png"
 import iconvideo from "../../assets/iconvideo.png"
-import CardServico from "../../components/Card_Servico"
+import foto from "../../assets/foto.png"
 import mockup from "../../assets/two.png"
 import seta from "../../assets/seta.png"
 import { Nav } from "../../components/Navbar"
 import Button from "../../components/Button"
+import Card_Service from "../../components/Card_Servico"
 export function Home(){
+   ;
     return(
         <>
         <Nav/>
@@ -61,9 +63,8 @@ export function Home(){
                  </div>
                  <h1>Nossos Serviços</h1>
                  <div className="servicos">
-                    <CardServico title="Video" icon={iconvideo} url={video} content="Nav Studioz produz vídeos <br> cativantes, contando histórias <br> emocionantes com expertise <br> cinematográfica e criatividade envolvente."></CardServico>
-                    <CardServico title="Fotografia" icon={iconphoto} url={foto}  content="Nav Studioz captura <br> momentos unicos com estilo e <br> qualidade, eternizando memórias <br> através da fotografia excepcional"/>
-                    <CardServico title="Edição" icon={iconedition} url={edition} content="Nav Studioz aprimora imagens <br> com edição refinada, transformando <br> momentos em obras de arte <br> vívidas e impactantes."></CardServico>
+                 <Card_Service image={foto} url={iconphoto}  />
+
                  </div>
 
             </section>

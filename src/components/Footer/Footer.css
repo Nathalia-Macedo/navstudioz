@@ -158,3 +158,24 @@ img{
         flex-direction: column;
     }
 }
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+
+    .info_user_footer{
+        width: 90%;
+    }
+    .info_user_footer input{
+        width: 80%;
+        padding: 1rem;
+    }
+    .button_footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button_footer button{
+        width: 40%;
+        font-size: 22px;
+    }
+}

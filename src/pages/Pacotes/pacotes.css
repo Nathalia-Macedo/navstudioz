@@ -69,7 +69,7 @@
     }
   
     .nossosPacotes img {
-      width: 90%; /* Ajusta a largura da imagem para ocupar 100% do contêiner pai */
+    display: none; /* Ajusta a largura da imagem para ocupar 100% do contêiner pai */
       
     }
 
@@ -82,7 +82,7 @@
   }
 
 
-@media only screen and (min-width: 412px) and (max-width: 914px) {
+@media only screen and (min-width: 412px) and (max-width: 915px) {
     .conteudoPacotes {
         /* Exemplo de estilos para a seção .conteudoPacotes em tablets */
         padding: 1rem;
@@ -112,7 +112,15 @@
           .btn{
             width: 90%;
             font-size: 25px;
-        }   
+        }  
+        
+        .title_cards_pacotes h1{
+          font-size: 28px;
+        }
+
+        .title_cards_pacotes span{
+          font-size: 17px;
+        }
 }
 @media only screen and (min-width: 414px) and (max-width: 896px){
 .combos{
@@ -127,3 +135,45 @@
   font-size: 20px;
 }
 }
+
+@media only screen and (min-width: 360px) and (max-width: 640px){
+
+.title_cards_pacotes{
+  gap: 0.6rem;
+  display: flex;
+  text-align: center;
+}
+
+
+
+.image_pacote{
+display: none;
+}
+
+.cartoes_pacotes{
+  padding: 1rem;
+}
+
+.conteudoPacotes{
+  gap: 1rem;
+}
+
+
+}
+
+
+@media screen and (min-width:820px){
+ 
+  .nossosPacotes{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+  @media only screen and (min-width:1024px) and (max-width:1366px){
+    .nossosPacotes{
+      flex-direction: row;
+      gap: 1rem;
+    }
+
+  }

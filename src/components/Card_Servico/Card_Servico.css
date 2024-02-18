@@ -1,4 +1,4 @@
-.div_image{
+/* .div_image{
     width: 300px;
     height: 300px;
     overflow: hidden;
@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 768px) {
     .Card_Service {
-        height: auto; /* Alterado para altura automática */
+        height: auto; /* Alterado para altura automática 
     }
 
     .conteudo::before {
@@ -79,4 +79,4 @@
 
 #icon img{
     width: 50px;
-}
+} */

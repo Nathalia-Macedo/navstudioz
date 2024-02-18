@@ -115,7 +115,7 @@
         padding: 1.5rem;
       }
       .titulo_pacote h1 {
-        font-size: 19px;
+        font-size: 21px;
   }
 
   .titulo_pacote h3 {
@@ -124,7 +124,7 @@
 
   .content_pacotes span{
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
 }
 .button_pacote{
     padding: 0.4rem;
@@ -208,24 +208,41 @@
   .titulo_pacote h3 {
         font-size: 25px;
   }
+
+  .title_cards_pacotes{
+   padding: 3rem;
+  }
+
+  .title_cards_pacotes h1{
+    font-size: 30px;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width:1024px){
+@media only screen and (min-width: 721px) and (max-width: 844px) {
     .Card_Pacote{
         width: 70%;
         height: 80%;
     }
 
     .Card_Pacote_content span{
-        font-size: 25px;
+        font-size: 22px;
     }
     
-    .title_cards_pacotes{
-        padding: 0.4rem;
-        text-align: center;
-        gap: 0.4rem;
+    
+
+    .titulo_pacote h1{
+        font-size: 30px;
+    }
+
+    .titulo_pacote h3{
+        font-size: 27px;
+    }
+
+    .button_pacote button{
+        font-size: 23px;
     }
 }
+
 
 @media only screen and (max-width: 720px){
 .Card_Pacote{
@@ -238,3 +255,54 @@
         width: 70%;
     }
 }
+
+@media only screen and (min-width: 360px) and (max-width: 640px){
+
+    .Card_Pacote{
+        width: 95%;
+       
+
+    }
+}
+@media only screen and (min-width: 390px) and (max-width: 720px){
+    .Card_Pacote{
+        width: 95%;
+       
+
+    }
+    .Card_Pacote_content span{
+        font-size: 17px;
+    }
+
+    .titulo_pacote h1{
+        font-size: 28px;
+    }
+
+    .titulo_pacote h3{
+        font-size: 22px;
+    }
+
+    .button_pacote button{
+        font-size: 18px;
+        width: 90%;
+    }
+}
+
+ @media screen and (min-width:1024px){
+    .content_pacotes span{
+        font-size: 20px;
+    }
+
+    .button_pacote button{
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .button_pacote{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+   
+} 
