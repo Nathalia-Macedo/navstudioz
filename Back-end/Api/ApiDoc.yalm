@@ -1,0 +1,99 @@
+openapi: 3.0.0
+info:
+  title: API de Gerenciamento de Usuários
+  description: API para registro, login e listagem de usuários.
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000
+paths:
+  /register:
+    post:
+      summary: Registra um novo usuário.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                surname:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+                telefone:
+                  type: string
+      responses:
+        '201':
+          description: Registro concluído com sucesso.
+        '500':
+          description: Erro interno.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                  mensagemErros:
+                    type: string
+                  successful:
+                    type: boolean
+      tags:
+        - Usuários
+  /login:
+    post:
+      summary: Faz login de um usuário existente.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Login bem-sucedido.
+        '401':
+          description: Credenciais incorretas.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                  successful:
+                    type: boolean
+      tags:
+        - Usuários
+  /users:
+    get:
+      summary: Retorna a lista de usuários cadastrados.
+      responses:
+        '200':
+          description: Requisição bem-sucedida.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    name:
+                      type: string
+                    surname:
+                      type: string
+                    email:
+                      type: string
+                    telephone:
+                      type: string
+      tags:
+        - Usuários
