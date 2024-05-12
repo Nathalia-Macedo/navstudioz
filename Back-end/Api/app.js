@@ -1,13 +1,12 @@
 const express = require("express");
-const bcrypt = require("bcrypt");
 const body_parser = require("body-parser");
-const jsonwebtoken = require("jsonwebtoken");
 const cors = require('cors');
 const { UserRegistration, UserLogin, ListUsers } = require('./apiRequests')
 const { db } = require('./connection')
+require('dotenv').config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 app.use(cors(""));
 app.use(body_parser.json())
@@ -22,7 +21,7 @@ app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}`);
 });
 
-app.post("/register", async(req, res) =>{ await UserRegistration(req, res) });
-app.post("/login", async(req, res) => { await UserLogin(req,res) });
-app.get("/users", async(req,res) => { await ListUsers(req,res) });
-
+app.post("/api/homescreen/register", async(req, res) =>{ await UserRegistration(req, res) });
+app.post("/api/homescreen/login", async(req, res) => { await UserLogin(req,res) });
+app.get("/api/mainmenu/listusers", async(req,res) => { await ListUsers(req,res) });
+//app.post("/api/homescreen/recoverpassword", async(req, res) => { await UserLogin(req,res) });
